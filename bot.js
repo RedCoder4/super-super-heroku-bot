@@ -25,7 +25,7 @@ client.on('message', message => {
 
 client.on('message', message => {
     if (message.content === '?help') {
-    	dm.reply('Help is being added and will be there very soon!');
+    	message.author.sendMessage('Help is being added and will be there very soon!');
   	}
 });
 
