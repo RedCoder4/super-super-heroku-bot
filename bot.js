@@ -6,7 +6,7 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
-    if (message.content === 'events') {
+    if (message.content === '!events') {
     	message.reply('Well, this is sad! We appear to be in a blank spot. I am not able to find any events. Check back soon!');
   	}
 });
