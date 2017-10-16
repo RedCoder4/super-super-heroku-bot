@@ -11,5 +11,18 @@ client.on('message', message => {
   	}
 });
 
+client.on('message', message => {
+    if (message.content === 'FAVA get ready') {
+    	message.reply('FAVA Events is online and running perfectly.');
+  	}
+});
+
+client.on('message', message => {
+    if (message.content === '?about') {
+    	message.reply('Well basically the way I work is I scan a offsite calendar and display that data in a Discord message for all to see! Right now I am 7 on a pH scale ( Basic get it?).');
+  	}
+});
+
+
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
