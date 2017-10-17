@@ -25,9 +25,7 @@ client.on('message', message => {
 
 client.on('message', message => {
     if (message.content === '?help') {
-        let messageToSend = message.content.split(" ").slice(2).join(" ");
-        let userToSend = message.mentions.users.first();
-    	 userToSend.send('Help is being added and will be there very soon!');
+        client.sendMessage(msg.author, 'Help is being added and will be there very soon!');
   	}
 });
 
