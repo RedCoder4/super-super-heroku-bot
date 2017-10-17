@@ -25,7 +25,7 @@ client.on('message', message => {
 
 client.on('message', message => {
     if (message.content === '?help') {
-         message.reply('?events - Displays upcoming/latest events' /n '?FAVA get ready - Makes sure the bot can send messages' /n '?about - Read a brief description of the bot' /n '?help - Display all the commands.' /n '?past events - All the past events since the bot has been active. (10/17/17)');
+         message.reply('?events - Displays upcoming/latest events /n ?FAVA get ready - Makes sure the bot can send messages /n ?about - Read a brief description of the bot /n ?help - Display all the commands. /n ?past events - All the past events since the bot has been active. (10/17/17)');
   	}
 });
 
