@@ -6,7 +6,7 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
-    if (message.content === '!events') {
+    if (message.content === '?events') {
     	message.reply('Well, this is sad! We appear to be in a blank spot. I am not able to find any events. Check back soon!');
   	}
 });
@@ -25,7 +25,13 @@ client.on('message', message => {
 
 client.on('message', message => {
     if (message.content === '?help') {
-        client.sendMessage(msg.author, 'Help is being added and will be there very soon!');
+         message.reply('Help is being added and will be there very soon!');
+  	}
+});
+
+client.on('message', message => {
+    if (message.content === '?past events') {
+         message.reply('Since I am so new I cannot pull old data, but one latest events was the Short Runway Challenge. That was fun!');
   	}
 });
 
