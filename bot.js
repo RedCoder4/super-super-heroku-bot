@@ -12,7 +12,7 @@ client.on('message', message => {
 });
 
 client.on('message', message => {
-    if (message.content === 'FAVA get ready') {
+    if (message.content === '?FAVA get ready') {
     	message.reply('FAVA Events is online and running perfectly.');
   	}
 });
@@ -25,7 +25,7 @@ client.on('message', message => {
 
 client.on('message', message => {
     if (message.content === '?help') {
-         message.reply('''?events - Displays upcoming/latest events''' '''?FAVA get ready - Makes sure the bot can send messages''' '''?about - Read a brief description of the bot''' '''?help - Display all the commands.''' '''?past events - All the past events since the bot has been active. (10/17/17)''');
+         message.reply('?events - Displays upcoming/latest event ?FAVA get ready - Makes sure the bot can send messages ?about - Read a brief description of the bot ?help - Display all the commands. ?past events - All the past events since the bot has been active. (10/17/17)');
   	}
 });
 
