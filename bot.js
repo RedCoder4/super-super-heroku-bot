@@ -26,7 +26,7 @@ client.on('message', message => {
 client.on('message', message => {
     if (message.content === '?help') {
          message.reply('?events - Displays upcoming/latest event.');
-  	        message.reply('?FAVA get ready - Makes sure the bot can send messages.')
+  	        message.send('?FAVA get ready - Makes sure the bot can send messages.')
         message.reply('?about - Read a brief description of the bot.')
         message.reply('?help - Display all the commands needed.')
         message.reply('?past events - All the past events since the bot has been active. (10/17/17).')
