@@ -5,6 +5,10 @@ client.on('ready', () => {
     console.log('I am ready!');
 });
 
+client.on('ready', () => {
+    console.log('Update Finished! Code cleanup, performance fix and better uplink.');
+});
+
 client.on('message', message => {
     if (message.content === '?events') {
     	message.reply('Well, this is sad! We appear to be in a blank spot. I am not able to find any events. Check back soon!');
