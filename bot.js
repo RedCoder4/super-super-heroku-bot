@@ -23,14 +23,14 @@ client.on('message', message => {
   	}
 });
 
-client.on('message', function(message) {
+client.on('message', message => {
     if (message.content === '?help') {
         // Don't forget to log the message!
-        client.sendMessage(message.channel, '?events - Displays upcoming/latest event.');
-  	        client.sendMessage(message.channel, '?FAVA get ready - Makes sure the bot can send messages.')
-        clent.sendMessage(message.channel, '?about - Read a brief description of the bot.')
-        client.sendMessage(message.channel, '?help - Display all the commands needed.')
-        client.sendMessage(message.channel, '?past events - All the past events since the bot has been active. (10/17/17).')
+       message.reply('?events - Displays upcoming/latest event.');
+  	        message.reply('?FAVA get ready - Makes sure the bot can send messages.')
+        message.reply('?about - Read a brief description of the bot.')
+        message.reply('?help - Display all the commands needed.')
+        message.reply('?past events - All the past events since the bot has been active. (10/17/17).')
     
 });
 
