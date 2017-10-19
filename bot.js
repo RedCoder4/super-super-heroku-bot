@@ -31,7 +31,7 @@ client.on('message', message => {
         message.reply('?about - Read a brief description of the bot.')
         message.reply('?help - Display all the commands needed.')
         message.reply('?past events - All the past events since the bot has been active. (10/17/17).')
-    
+    }
 });
 
 client.on('message', message => {
