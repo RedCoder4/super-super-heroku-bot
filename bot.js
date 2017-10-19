@@ -23,7 +23,8 @@ client.on('message', message => {
   	}
 });
 
-client.on('?help', function(message) {
+client.on('message', function(message) {
+    if (message.content === '?help') {
         // Don't forget to log the message!
         client.sendMessage(message.channel, '?events - Displays upcoming/latest event.');
   	        client.sendMessage(message.channel, '?FAVA get ready - Makes sure the bot can send messages.')
