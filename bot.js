@@ -6,7 +6,7 @@ client.on('ready', () => {
 });
 
 client.on('ready', () => {
-    console.log('Update Finished! Code cleanup, performance fix and better uplink.');
+    message.reply('Update Finished! Code cleanup, performance fix and better uplink.');
 });
 
 client.on('message', message => {
