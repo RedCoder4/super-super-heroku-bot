@@ -5,10 +5,6 @@ client.on('ready', () => {
     console.log('I am ready!');
 });
 
-client.on('ready', () => {
-    message.reply('Update Finished! Code cleanup, performance fix and better uplink.');
-});
-
 client.on('message', message => {
     if (message.content === '?events') {
     	message.reply('Well, this is sad! We appear to be in a blank spot. I am not able to find any events. Check back soon!');
@@ -29,8 +25,12 @@ client.on('message', message => {
 
 client.on('message', message => {
     if (message.content === '?help') {
-         message.reply('?events - Displays upcoming/latest event ?FAVA get ready - Makes sure the bot can send messages ?about - Read a brief description of the bot ?help - Display all the commands. ?past events - All the past events since the bot has been active. (10/17/17)');
-  	}
+         message.reply('?events - Displays upcoming/latest event.');
+  	        message.reply('?FAVA get ready - Makes sure the bot can send messages.')
+        message.reply('?about - Read a brief description of the bot.')
+        message.reply('?help - Display all the commands needed.')
+        message.reply('?past events - All the past events since the bot has been active. (10/17/17).')
+    }
 });
 
 client.on('message', message => {
